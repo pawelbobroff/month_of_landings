@@ -1,0 +1,14 @@
+.main{
+    max-width: $content-width;
+    min-width: 260px;
+    margin: 0 auto;
+    @include tablet {
+        margin: 0 30px;
+        max-width: 100%;
+        min-width: 648px;
+    }
+    @include mobile {
+        min-width: 260px;
+        margin: 0 10px;
+    }
+}

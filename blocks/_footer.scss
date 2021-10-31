@@ -1,0 +1,96 @@
+.footer{
+    margin-top: 0 ;    
+
+    &__description-column{
+        //max-width: $content-width;
+        min-width: 260px;
+        padding: 60px 160px;
+        position: relative;
+
+        @include tablet {
+            padding: 50px;
+        }
+        @include mobile{
+            padding: 20px;
+        }
+    }
+    &__heading{
+        @include text(32px, 38px, 600);
+        margin: 0;
+        margin-bottom: 58px;
+        max-width: 470px;
+        color: #FFFFFF;
+        @include tablet{
+            margin-bottom: 20px;
+        }
+        @include mobile{
+            margin-bottom: 14px;
+            @include text(24px, 29px, 700);
+        }
+    }
+    &__text{
+        @include text(18px, 26px, 400);
+        margin: 0;
+        margin-bottom: 174px;
+        width: 470px;
+        color: rgba(255, 255, 255, 0.7);
+        @include tablet{
+            margin-bottom: 130px;
+        }
+        @include mobile{
+            margin-bottom: 95px;
+            @include text(12px, 15px, 400);
+        }
+    }
+    &__button{
+        @include text(16px, 24px, 600);
+        max-width: 470px;
+        width: 470px;
+        height: 54px;
+        margin: 0;        
+        padding: 0;
+        background: #FFFFFF;
+        border: none;
+        border-radius: 8px;
+        text-align: center;
+        color: #222222;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.93;
+        }
+
+        @include tablet{
+            width: 240px;
+            @include text(14px, 24px, 600);
+        }
+
+        @include mobile{
+            max-width: unset;
+            width: 100%;
+            min-width: 260px;
+            @include text(12px, 24px, 600);
+        }        
+    }
+    &__image{
+        margin: 0;
+        padding: 0;
+        width: 311px;
+        object-fit: cover;
+        position: absolute;
+        top: -30px;
+        right: 220px;
+        filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));        
+        clip: rect(0, 311px, 539px, 0);
+        border-radius: 30px;
+
+        @include tablet {
+            width: 250px;
+            right: 69px;
+            clip: rect(0, 250px, 437px, 0);
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+}

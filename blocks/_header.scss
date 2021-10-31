@@ -1,0 +1,125 @@
+.header{    
+    margin-bottom: 60px;
+
+    @include tablet {
+        margin-bottom: 70px;
+    }
+
+    &__description-column{
+        max-width: $content-width;
+        min-width: 260px;
+        position: relative;
+        margin: 0 auto;
+        padding: 30px 0;
+
+        @include tablet {
+            padding: 30px 50px;
+        }
+
+        @include mobile {
+            padding: 20px;
+        }
+
+    }
+
+    &__logo{
+        width: 40px;
+        margin-bottom: 60px;
+        @include tablet {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__heading{
+        @include text(60px, 68px, 700);
+        margin: 0;
+        margin-bottom: 28px;
+        max-width: 650px;
+        min-width: 260px;
+        color: #FFFFFF;
+
+        @include tablet {
+            @include text(33px, 37px, 700);
+            margin-bottom: 20px;
+            width: 360px;
+        }
+
+        @include mobile {
+            @include text(24px, 29px, 700);
+            margin-bottom: 14px;
+            width: 100%;
+
+        }
+    }
+
+    &__text{
+        @include text(18px, 25px, 400);
+        margin: 0;
+        margin-bottom: 108px;
+        width: 450px;
+        color: rgba(255, 255, 255, 0.7);
+        @include tablet {
+            @include text(15px, 20px, 400);
+            margin-bottom: 250px;
+            width: 360px;
+        }
+
+        @include mobile {
+            @include text(12px, 15px, 400);
+            margin-bottom: 50px;
+            width: 100%;
+        }
+    }
+
+    &__image{    
+        margin: 0;
+        max-width: 311px;
+        padding: 0;
+        object-fit: cover;
+        position: absolute;
+        top: 40px;
+        right: 60px;
+        filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
+        border-radius: 30px;
+        @include tablet {
+            width: 250px;
+            top: 120px;
+            right: 45px;
+        }
+
+        @include mobile {
+            width: 260px;
+            max-width: unset;
+            margin: 0 auto 50px auto;
+            position: unset;
+            display: block;
+        }
+    }
+
+    &__button{
+        @include text(16px, 24px, 600);
+        width: 240px;
+        height: 54px;
+        margin: 0;
+        margin-bottom: 100px;
+        padding: 0;
+        background: #FFFFFF;
+        border: none;
+        border-radius: 8px;
+        text-align: center;
+        color: #222222;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.93;
+        }
+        @include tablet {
+            margin-bottom: 20px;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+
+    }
+}

@@ -1,0 +1,47 @@
+.benefit-card{
+    padding: 40px;
+    background: #F8F8F8;
+    border-radius: 20px;
+
+    @include tablet {
+        padding: 30px;
+    }
+
+    @include mobile {
+        padding: 20px;
+    }
+    
+    &__benefit{
+        @include text(18px, 20px, 500);
+        margin: 0;
+        padding: 0;        
+        margin-bottom: 20px;
+        color: rgba(17, 17, 17, 0.6);
+
+        @include tablet {
+            @include text(15px, 20px, 500);
+            margin-bottom: 12px;
+        }
+    }
+    &__title{
+        @include text(32px, 38px, 600);
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        color: #111111;
+        @include tablet {
+            @include text(26px, 31px, 600);
+            margin-bottom: 50px;
+        }
+    }
+    &__content{
+        @include text(16px, 24px, 400);
+        margin: 0;
+        padding: 0;
+        color: rgba(17, 17, 17, 0.6);
+        @include tablet {
+            @include text(15px, 20px, 400);
+            margin-bottom: 20px;
+        }
+    }
+}
